@@ -39,3 +39,59 @@ git remote
 
 kann man sich alle Verbindungen des Ordners (lokal) anzeigen lassen
 
+## Erstelle Ordnerstruktur
+
+- eröffne neuen branch mit namen `setup` und setze den **HEAD** darauf mit
+
+```
+git checkout -b setup
+```
+
+- erstelle die folgenden Files und Ordner:
+
+  - index.html
+  - style.css
+  - LICENES
+
+- erstelle den html-Standard und verknüpfe die `style.css` Datei mit der `index.html` Datei im <_head_> mit:
+
+```html
+<link rel="stylesheet" href="style.css" />
+```
+
+- ändere in der `ìndex.html` Datei den Titel in
+
+```html
+<title>River Camp Half Island</title>
+```
+
+- Einbindung externer style sheets für die **ICONS** und die gewünschte **Schriftart** mit GoogleFonts
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+```
+
+- dann dem Projekt eine entsprechende License geben (meist MIT License) von https://choosealicense.com/ und diese in die Datei `LICENSE` kopieren/einfügen und dabei das Jahr und den Namen ersetzen.
+
+- README.md Datei permanent updaten (**Wichtig: zu mindestens immer before man commited!**)
+
+- abschließend erstelle ein `git add` und `git commit -m "..."` und merge den setup branch mit master (Hinweis: Prüfe immer auf welchem branch Du Dich befindest! Vom master-branch aus wird gemergt!)
+
+```
+git checkout master
+git merge setup
+```
+
+- abschließend upstream (push) beide (master und setup-branch) auf github.
+
+```
+git push
+git push -u <shortname> setup
+```
