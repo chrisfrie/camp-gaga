@@ -110,7 +110,7 @@ git checkout -b html
   <footer></footer>
 </body>
 ```
-- anschließend erstelle im <*main*> tag die Hauptsektionen <*section*>
+- anschließend erstelle im <*main*> tag die Hauptsektionen <*section*> mit entsprechenden ```ìd``` dazu:
     - Banner
     - About
     - Elements
@@ -129,4 +129,41 @@ z.b.:
 </section>
 ```
 - anschließend werden alle Sektionen individuell mit entsprechenden Inhalt gefüllt
+
+### Banner
+
+- anlegen der Struktur und des Inhaltes des Banners 
+```html
+<h1>How to build a solid One Pager</h1>
+<p>
+  Every good one pager starts with a big headline. <br />
+  And a subtitle maybe.
+</p>
+<a href="#contact" class="btn">Get in touch</a>
+```
+Achtung: mit ```href="#contact"``` wird mit der ```ìd="contact"```ein Anker gesetzt, der auf diese ```ìd``` später verweisen wird. Des Weiteren wurde dem Link, der ein button werden soll, die *class* ```btn``` zugewiesen.
+Hinweis: der Link steht für sich und ist nicht ein *inline part* von einem Paragraphen.
+
+### About
+
+- besteht aus einer Überschrift und einer Unterüberschrift und Paragraphen:
+```html
+<div class="about">
+  <h2>About</h2>
+  <h3>What's an about section?</h3>
+  <p>
+    This section is an example for an <strong>about section</strong>. You would
+    typically describe your <strong>goal</strong> and some
+    <strong>details</strong> about the website in a couple of sentences.
+  </p>
+  <p>
+    Notice how some of the words are emphasized to add
+    <strong>visual interest</strong>. Most one pagers also benefit from a rather
+    large font-size. Remember this is not like a book and more like a
+    <strong>magazine or a poster</strong>.
+  </p>
+</div>
+```
+Hinweis: wichtiger Wörter wurden mit <*strong*> hervorgehoben.
+
 
