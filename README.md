@@ -95,3 +95,38 @@ git merge setup
 git push
 git push -u <shortname> setup
 ```
+
+## Erstellen der HTML-Struktur
+
+- erstelle neuen branch *html*
+```
+git checkout -b html
+```
+- erstelle im <*body*> tag die erste Stufe der Struktur mit <*header*>, <*main*> und <*footer*>
+```html
+<body>
+  <header></header>
+  <main></main>
+  <footer></footer>
+</body>
+```
+- anschließend erstelle im <*main*> tag die Hauptsektionen <*section*>
+    - Banner
+    - About
+    - Elements
+    - Showcase
+    - Contact
+- jede dieser Sektionen <*section*> erhält einen inneren Container <*div*> mit der *class* ```section-inner-container```
+- innerhalb dieses inneren <*div*> Container wiederum wird nochmals ein <*div*> Container erstellt mit der *class* name der Sektion (am besten) für die spätere Verlinkung 
+z.b.:
+```html
+<section id="banner">
+  <div class="section-inner-container">
+    <div class="banner">
+      This is where the content for the section will go
+    </div>
+  </div>
+</section>
+```
+- anschließend werden alle Sektionen individuell mit entsprechenden Inhalt gefüllt
+
