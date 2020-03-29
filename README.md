@@ -195,4 +195,47 @@ Hinweis: wichtiger Wörter wurden mit <*strong*> hervorgehoben.
 </div>
 ```
 
+### Price List
+
+- auch hier kommt das **card-grid** zur Anwendung
+- ähnlicher Aufbau wie die Sektion Elemente
+- Hinweis: hier handelt es sich um eine Testversion
+
+### Showcase
+
+- besteht aus 2 Überschriften und einem weiteren ```div``` Container, der weiderum in zwei Untercontainer aufgeteilt ist:
+```html
+<div class="showcase">
+  <h2>Showcase</h2>
+  <h3>A picture says more than...</h3>
+  <div class="split">
+    <div class="split-media"></div>
+    <div class="split-text"></div>
+  </div>
+</div>
+```
+- im ersten ```div``` Untercontainer befindet sich ein Bild:
+```html
+<div class="split-media">
+  <img
+    src="https://i.pinimg.com/originals/e8/cb/31/e8cb318d3a0a396dbf0b5388bc2c1cd8.jpg"
+    alt="Here goes your image description"
+  />
+</div>
+```
+- im zweiten ```div``` Untercontainer befindet sich eine Unterüberschrift mit anschließendem Text:
+```html
+<div class="split-text">
+  <h4>A thousand words</h4>
+  <p>
+    The combination of <strong>images or other media</strong> on one side,
+    accompanied by some <strong>text</strong> on the other is a very common
+    pattern. Often there's a <strong>link</strong> at the end for people to
+    explore this particular aspect further.
+  </p>
+  <a class="btn" href="">Go further</a>
+</div>
+```
+
+
 
