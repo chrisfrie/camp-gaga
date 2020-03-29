@@ -166,4 +166,33 @@ Hinweis: der Link steht für sich und ist nicht ein *inline part* von einem Para
 ```
 Hinweis: wichtiger Wörter wurden mit <*strong*> hervorgehoben.
 
+### Elements
+
+- die Sektion Elemente besteht wiederum aus 2 ```div``` Teilen:
+```html
+<div class="elements">
+  <div class="section-header"></div>
+  <div class="card-grid"></div>
+</div>
+```
+- davon besteht der erste ```div``` Part aus 2 Überschriften
+```html
+<div class="section-header">
+  <h2>Elements</h2>
+  <h3>What are the ingredients for an awesome one pager?</h3>
+</div>
+````
+- die zweite ```div``` besteht aus einem **card-grid**, welches wiederum aus mehreren **card**´s bestehen. Diese **cards** sind wie folgt aufgebaut:
+```html
+<div class="card">
+  <div class="card-icon">
+    <i class="fa fa-adjust"></i>
+  </div>
+  <h4>Sections</h4>
+  <p>
+    These are like the pages of a magazine. Each may have a custom layout.
+  </p>
+</div>
+```
+
 
