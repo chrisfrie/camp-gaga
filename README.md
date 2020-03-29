@@ -252,5 +252,49 @@ Hinweis: wichtiger Wörter wurden mit <*strong*> hervorgehoben.
 </div>
  ```
 
+### Footer
 
+- besteht aus drei Untercontainer:
+```html
+<footer>
+  <div class="footer-inner-container">
+    <div class="footer-copyright"></div>
+    <div class="footer-middle"></div>
+    <div class="footer-links"></div>
+  </div>
+</footer>
+```
 
+- Untercontainer besteht aus Paragraphen
+```html
+<div class="footer-copyright">
+  <p>Designed and Built by Christina Friede</p>
+  <p>Copyright © 2020 All Right Reserved</p>
+</div>
+```
+
+- Untercontainer beinhaltet ein Icon von FB
+```html
+<div class="footer-middle">
+  <a href=""><i class="fab fa-facebook"></i></a>
+</div>
+```
+
+- Untercontainer beinhaltet zwei verlinkungen hinsichtlich *Private Policy* und *Imprint* 
+```html
+<div class="footer-links">
+  <a href="#policy">Private Policy</a>
+  <a href="#imprint">Imprint</a>
+</div>
+```
+
+Zum Abschluss der HTML-Struktur muss die **README.md** upgedated werden und dann alles commited und der html-branch  zum master gemerged werden. DAran schließt sich der finale push beider branches (*html* und *master*):
+```
+git commit -am "Create basic html structure"
+git checkout master
+git merge html
+# This is for pushing the master branch
+git push
+# And here we are pushing the html branch
+git push -u my-github html
+```
