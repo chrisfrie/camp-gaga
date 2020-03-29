@@ -237,5 +237,20 @@ Hinweis: wichtiger Wörter wurden mit <*strong*> hervorgehoben.
 </div>
 ```
 
+### Contact
+ 
+ - erasfddie Sektion Contact besteht aus 2 Überschriften, einem anschließenden Text und einem **Send an Email** Button:
+ ```html
+<div class="contact">
+  <h2>Contact</h2>
+  <h3>Call to Action</h3>
+  <p>
+    The bottom of most one pagers is a call to action. The simplest one is an
+    email link. So here you go:
+  </p>
+  <a class="btn" href="mailto:hello@me.com">Send an Email</a>
+</div>
+ ```
+
 
 
